@@ -124,15 +124,15 @@ const HomePage = (props: Props) => {
 
     <div className='flex flex-col md:flex-row'>
       {/* Left division for webcam and canvas */}
-      <div className='relative md:w-1/2'>
-        <div className='relative h-72 md:h-screen w-full'>
+      <div className='relative md:w-2/3'>
+        <div className='relative h-72 md:h-screen  w-full'>
           <Webcam ref={webcamRef} mirrored={mirrored} className='h-full w-full object-cover p-2' />
           <canvas ref={canvasRef} className='absolute top-0 left-0 h-full w-full object-cover'></canvas>
         </div>
       </div>
       {/* Right division - button and wiki section */}
-      <div className='flex flex-col md:flex-row flex-1'>
-        <div className='border-primary/5 border-2 max-w-xs flex flex-col gap-2 justify-between shadow-md rounded-md p-4 md:mr-4'>
+      <div className='flex flex-row flex-1'>
+        <div className='border-primary/5 border-2 max-w-xs flex flex-col gap-2 justify-between shadow-md rounded-md p-4 md:mr-4 '>
           {/* top section */}
           <div className='flex flex-col gap-2 '>
             <ModeToggle />
